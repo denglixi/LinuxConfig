@@ -33,14 +33,21 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'L9'
 Plugin 'aperezdc/vim-template'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'Yggdroot/indentLine'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'tell-k/vim-autopep8'
+Plugin 'heavenshell/vim-pydocstring' 
+Plugin 'L9'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'jistr/vim-nerdtree-tabs'       
+Plugin 'scrooloose/nerdtree'
+Plugin 'python-mode/python-mode'    
+Plugin 'vim-scripts/YankRing.vim'     
+Plugin 'vim-airline/vim-airline' 
 Plugin 'w0rp/ale'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'Yggdroot/indentLine'
+Plugin 'Yggdroot/LeaderF'    
+
 call vundle#end()
 filetype plugin indent on
 
@@ -283,6 +290,7 @@ endif
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
+set fileencoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
